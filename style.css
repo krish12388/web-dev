@@ -1,0 +1,210 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  position: relative;
+  overflow: hidden;
+}
+#page{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1f1f1;
+}
+#page1{
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1f1f1;
+  justify-content: space-between;
+}
+#page2{
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1f1f1;
+}
+#page3{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1f1f1;
+}
+canvas{
+  position: relative;
+  z-index: 9;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+#loop{
+  display: flex;
+  position: absolute;
+  top: 30%;
+  height: 25%;
+  width: 100%;
+  font-size: 100px;
+  white-space: nowrap;
+  font-family: gilroy;
+}
+#loop>h1{
+  font-weight: 400;
+  animation: anim  linear 14s infinite ;
+
+}
+#loop>h1>span{
+  -webkit-text-stroke: 1.2px black;
+  color: transparent;
+  font-weight: 500;
+}
+@keyframes anim{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+#nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7%;
+  width: 100vw;
+  position: fixed;
+  z-index: 99;
+  padding: 0px 30px;
+}
+#nav>h3{
+  font-family: gilory;
+  font-weight: 200;
+  font-size: 46px;
+}
+#nav>h4{
+  font-family: gilory;
+  font-weight: 200;
+  font-size: 30px;
+  margin-left: 56%;
+}
+#nav>button{
+  height: 65%;
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+#text1{
+  position: absolute;
+  display: flex;
+  height: 30%;
+  width: 90vw;
+  top: 55%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 30px ;
+}
+#text1>h3{
+  width: 40%;
+  font-size: 30px;
+  font-family: gilory;
+  color: #7c7c7c;
+  font-weight: 600;
+}
+#text1>h4{
+  font-size: 60px;
+  margin-left: 100px;
+  font-family: gilory;
+  font-weight: 500;
+}
+#page1>#right-text{
+  position: absolute;
+  top: 20%;
+  height: 30%;
+  width: 40%;
+  padding-left: 15%;
+}
+#page1>#right-text>h3{
+  font-weight: 400;
+  color: #7c7c7c;
+  font-size: 35px;
+}
+#page1>#right-text>h1{
+  line-height: 1.5;
+  font-size: 50px;
+}
+#page1>#left-text{
+  position: absolute;
+  height: 30%;
+  width: 40%;
+  top: 50vh;
+  left: 65%;
+  bottom: 10px;
+}
+#page1>#left-text>h1{
+  font-size: 50px;
+  line-height: 1.5;
+}
+#page1>#left-text>h3{
+  color: #7c7c7c;
+  font-weight: 400;
+  font-size: 35px;
+}
+#page2>#text2{
+  position: absolute;
+  top: 25%;
+  height: 40%;
+  width: 40%;
+  padding-left: 15%;
+}
+#page2>#text2>h3{
+  font-weight: 400;
+  color: #7c7c7c;
+  font-size: 45px;
+}
+#page2>#text2>h1{
+  line-height: 1.5;
+  font-size: 88px;
+}
+#page2>#text3{
+  position: absolute;
+  height: 30%;
+  width: 40%;
+  top: 40%;
+  left: 60%;
+  padding-left: 15%;
+}
+#page2>#text3>p{
+  font-size: 30px;
+  font-weight: 800;
+  text-align: start;
+  padding-right: 50px;
+}
+#page3>#text4{
+  position: absolute;
+  height: 30%;
+  width: 30%;
+  top: 40%;
+  left: 60%;
+  padding-left: 15%;
+}
+#page3>#text4>h3{
+  font-weight: 400;
+  color: #7c7c7c;
+  font-size: 45px;
+}
+#page3>#text4>h1{
+  line-height: 1.5;
+  font-size: 88px;
+}
+
+
